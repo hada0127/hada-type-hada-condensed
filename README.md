@@ -13,17 +13,17 @@ jsDelivr's GitHub CDN endpoint and keep the version pinned.
 Whole files — one WOFF2 per weight/style:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.19/css/hada-condensed.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.21/css/hada-condensed.css">
 ```
 
 Sliced — the same faces cut into unicode-range pieces, so the browser
 downloads only the pieces the page's text uses:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.19/css/hada-condensed-subset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.21/css/hada-condensed-subset.css">
 ```
 
-Without the `@v2026.10.19` tag the URL follows the latest release
+Without the `@v2026.10.21` tag the URL follows the latest release
 (`https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed/css/hada-condensed.css`). Pin the tag in production.
 
 Direct WOFF2 example:
@@ -31,7 +31,7 @@ Direct WOFF2 example:
 ```css
 @font-face {
   font-family: "Hada Condensed";
-  src: url("https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.19/woff2/HadaCondensed-Light.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/hada0127/hada-type-hada-condensed@v2026.10.21/woff2/HadaCondensed-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -46,12 +46,13 @@ Direct WOFF2 example:
 
 ## Packages
 
-TTF, OTF and WOFF2 ZIPs are attached to the GitHub release:
+TTF, OTF, WOFF2 and sliced WOFF2 ZIPs are attached to the GitHub release:
 
-[HadaCondensed-TTF.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.19/HadaCondensed-TTF.zip) · [HadaCondensed-OTF.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.19/HadaCondensed-OTF.zip) · [HadaCondensed-WOFF2.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.19/HadaCondensed-WOFF2.zip)
+[HadaCondensed-TTF.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.21/HadaCondensed-TTF.zip) · [HadaCondensed-OTF.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.21/HadaCondensed-OTF.zip) · [HadaCondensed-WOFF2.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.21/HadaCondensed-WOFF2.zip) · [HadaCondensed-WOFF2-Subset.zip](https://github.com/hada0127/hada-type-hada-condensed/releases/download/v2026.10.21/HadaCondensed-WOFF2-Subset.zip)
 
 Each ZIP includes `WEBFONT-USAGE.txt`, `LICENSE.txt` and `COPYRIGHT.txt`.
-The WOFF2 ZIP also includes `WEBFONT.css` for self-hosted use.
+The WOFF2 ZIP also includes `WEBFONT.css` for self-hosted use; the sliced
+ZIP carries `woff2-subset/` with `WEBFONT-SUBSET.css` (relative URLs).
 
 ## Other Hada Type families
 
